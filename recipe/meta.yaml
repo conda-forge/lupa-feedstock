@@ -1,13 +1,13 @@
 {% set name = "lupa" %}
-{% set version = "2.2" %}
+{% set version = "2.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lupa-{{ version }}.tar.gz
-  sha256: 665a006bcf8d9aacdfdb953824b929d06a0c55910a662b59be2f157ab4c8924d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lupa-{{ version }}.tar.gz
+  sha256: 69c6a89f2b7b08a3040d7ed2a1eeccba37a31ddc92fa199339c53a2ae3c48c34
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-build-isolation
