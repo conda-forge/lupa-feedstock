@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lupa-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lupa-{{ version }}.tar.gz
   sha256: 665a006bcf8d9aacdfdb953824b929d06a0c55910a662b59be2f157ab4c8924d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
